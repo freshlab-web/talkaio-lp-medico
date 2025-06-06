@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 mb-12">
           <div className="col-span-1 md:col-span-1 lg:col-span-1">
             <img 
-              src="/lovable-uploads/fc743b2e-b47e-455c-a025-daf0e32c8796.png" 
+              src="https://cdn.jsdelivr.net/gh/freshlab-web/talkaio-lp-medico@main/dist/lovable-uploads/fc743b2e-b47e-455c-a025-daf0e32c8796.png" 
               alt="Talkaio Logo" 
               className="h-10 mb-6"
             />

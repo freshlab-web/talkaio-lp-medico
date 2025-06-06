@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <a href="#" className="z-50">
             <img
-              src="/lovable-uploads/fc743b2e-b47e-455c-a025-daf0e32c8796.png"
+              src="https://cdn.jsdelivr.net/gh/freshlab-web/talkaio-lp-medico@main/dist/lovable-uploads/fc743b2e-b47e-455c-a025-daf0e32c8796.png"
               alt="Talkaio Logo"
               className="h-10"
             />
