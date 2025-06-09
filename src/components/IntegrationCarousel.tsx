@@ -3,11 +3,11 @@ import { useKeenSlider } from "keen-slider/react"
 import { useEffect } from "react"
 
 const logos = [
-  { name: "TotalClinic", url: "/talkaio-lp-consultorios/lovable-uploads/totalclinic.png" },
-  { name: "ProDental Brasil", url: "/talkaio-lp-consultorios/lovable-uploads/prodentalbrasil.png" },
-  { name: "Dental Office", url: "/talkaio-lp-consultorios/lovable-uploads/dentaloffice.png" },
-  { name: "SimplesDental", url: "/talkaio-lp-consultorios/lovable-uploads/simplesdental.png" },
-  { name: "Clinicorp", url: "/talkaio-lp-consultorios/lovable-uploads/clinicorp.png" },
+  { name: "TotalClinic", url: "https://cdn.jsdelivr.net/gh/freshlab-web/talkaio-lp-medico@main/dist/lovable-uploads/totalclinic.png" },
+  { name: "ProDental Brasil", url: "https://cdn.jsdelivr.net/gh/freshlab-web/talkaio-lp-medico@main/dist/lovable-uploads/prodentalbrasil.png" },
+  { name: "Dental Office", url: "https://cdn.jsdelivr.net/gh/freshlab-web/talkaio-lp-medico@main/dist/lovable-uploads/dentaloffice.png" },
+  { name: "SimplesDental", url: "https://cdn.jsdelivr.net/gh/freshlab-web/talkaio-lp-medico@main/dist/lovable-uploads/simplesdental.png" },
+  { name: "Clinicorp", url: "https://cdn.jsdelivr.net/gh/freshlab-web/talkaio-lp-medico@main/dist/lovable-uploads/clinicorp.png" },
 ]
 
 export default function IntegrationCarousel() {
