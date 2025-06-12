@@ -7,6 +7,19 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // Função para scroll suave e evitar navegação errada
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const href = e.currentTarget.getAttribute("href");
+    if (href?.startsWith("#")) {
+      e.preventDefault();
+      const el = document.querySelector(href);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+        window.history.replaceState(null, "", href);
+      }
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
@@ -37,20 +50,20 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#benefits" className="text-talkaio-dark hover:text-talkaio-blue font-medium transition-colors">
+            <a href="#benefits" onClick={handleAnchorClick} className="text-talkaio-dark hover:text-talkaio-blue font-medium transition-colors">
               Benefícios
             </a>
-            <a href="#audience" className="text-talkaio-dark hover:text-talkaio-blue font-medium transition-colors">
+            <a href="#audience" onClick={handleAnchorClick} className="text-talkaio-dark hover:text-talkaio-blue font-medium transition-colors">
               Para Quem
             </a>
-            <a href="#technology" className="text-talkaio-dark hover:text-talkaio-blue font-medium transition-colors">
+            <a href="#technology" onClick={handleAnchorClick} className="text-talkaio-dark hover:text-talkaio-blue font-medium transition-colors">
               Tecnologia
             </a>
-            <a href="#faq" className="text-talkaio-dark hover:text-talkaio-blue font-medium transition-colors">
+            <a href="#faq" onClick={handleAnchorClick} className="text-talkaio-dark hover:text-talkaio-blue font-medium transition-colors">
               FAQ
             </a>
             <Button className="bg-talkaio-blue hover:bg-talkaio-darkBlue text-white">
-              <a href="#contact">Fale Conosco</a>
+              <a href="#contact" onClick={handleAnchorClick}>Fale Conosco</a>
             </Button>
           </nav>
 
