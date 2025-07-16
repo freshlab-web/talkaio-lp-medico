@@ -6,10 +6,10 @@ export default function Hero() {
   return (
     <section className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-talkaio-lightBlue to-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-1/2 mb-10 md:mb-0 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-talkaio-dark mb-6 leading-tight">
-              Reduza chamadas em sua odontologia com automatização de WhatsApp
+              Automatize o atendimento de seu consultório
             </h1>
             
             <p className="text-lg md:text-xl text-gray-700 mb-8">
@@ -32,7 +32,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 animate-slide-up">
+          <div className="w-full md:w-2/5 animate-slide-up">
             <div className="relative">
               <div className="absolute -top-6 -left-6 w-20 h-20 bg-talkaio-blue/20 rounded-full blur-xl"></div>
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-talkaio-blue/10 rounded-full blur-xl"></div>
